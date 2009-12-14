@@ -89,7 +89,11 @@ class Pickler
       def header(format = :comment)
         case format
         when :tag
-          "@#{url}#{labels.map {|l| " @#{l.tr(' _','_,')}"}.join}"
+          unless labels.nil?
+            "@#{url}#{labels.map {|l| " @#{l.tr(' _','_,')}"}.join}"
+          else
+            "# #{url}"
+          end
         else
           "# #{url}"
         end
