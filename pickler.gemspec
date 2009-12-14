@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
-  s.name                = "pickler"
+  s.name                = "glennr-pickler"
   s.version             = "0.1.3"
 
   s.summary             = "PIvotal traCKer Liaison to cucumbER"
   s.description         = "Synchronize between Cucumber and Pivotal Tracker"
-  s.authors             = ["Tim Pope"]
+  s.authors             = ["Tim Pope", "Glenn Roberts"]
   s.email               = "ruby@tpope.i"+'nfo'
   s.homepage            = "http://github.com/tpope/pickler"
   s.default_executable  = "pickler"
