@@ -6,6 +6,11 @@ If you aren't using Cucumber, you can still use pickler as a Pivotal Tracker
 command line client, provided you humor it with a features/ directory
 containing a tracker.yml file.
 
+== Updates from tpope's original pickler (by glennr)
+
+  - Pickler pull no longer parses the story first. Great for getting stories into tracker first, then you worry about formatting them in Cucumber-perfect fashion later.
+  - Story URLs can start with both a '@' and a '#' comment style
+  
 == Getting started
 
   gem install pickler --source=http://gemcutter.org
@@ -23,6 +28,8 @@ The pull and push commands map the story's name into the "Feature: ..." line
 and the story's description with an additional two space indent into the
 feature's body.  Keep this in mind when entering stories into Pivotal Tracker.
 
+
+  
 == Usage
 
   pickler pull
