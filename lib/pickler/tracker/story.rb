@@ -96,7 +96,7 @@ class Pickler
       end
 
       def to_s=(body)
-        if body =~ /\A@https?\b\S*(\s+@\S+)*\s*$/
+        if body =~ /\A[@|#]https?\b\S*(\s+@\S+)*\s*$/
           self.labels = body[/\A@.*/].split(/\s+/)[1..-1].map {|l| l[1..-1].tr('_,',' _')}
         end
         body = body.sub(/\A(?:[@#].*\n)+/,'')
